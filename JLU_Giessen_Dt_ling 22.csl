@@ -3,6 +3,9 @@
   <info>
     <title>JLU Gießen DAZ - Linguistik (Dt) Beta</title>
     <title-short>JLU Linguistik (Deutsch)</title-short>
+    <id>http://www.zotero.org/styles/jlu-giessen-daz-linguistik</id>
+    <link href="http://www.zotero.org/styles/universitat-giessen-daz-linguistik" rel="self"/>
+    <link href="http://www.zotero.org/styles/deutsche-sprache" rel="template"/>
     <link href="https://www.uni-giessen.de/de/fbz/fb05/germanistik/iprof/daf/dateien/handreichung_wiss_schreiben" rel="documentation"/>
     <author>
       <name>Yee Cheng Foo</name>
