@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="de-DE">
   <info>
-    <title>JLU Gießen DAZ - Linguistik (Deutsch) Beta</title>
+    <title>JLU Gießen DAZ - Linguistik (Deutsch)</title>
     <title-short>JLU Linguistik (Deutsch)</title-short>
     <id>http://www.zotero.org/styles/universitat-giessen-daz-linguistik</id>
     <link href="http://www.zotero.org/styles/universitat-giessen-daz-linguistik" rel="self"/>
@@ -17,7 +17,7 @@
     <category field="literature"/>
     <summary>Zitierstil entsprechend den Vorgaben der linguistischen Professuren am Institut für Germanistik der Justus-Liebig Universität Gießen. Der Stil orientiert sich an den Richtlinien von 'Deutsche Sprache: Zeitschrift für Theorie Praxis Dokumentation', hrsg. vom IDS Mannheim</summary>
     <updated>2025-11-21T11:17:00+00:00</updated>
-    <rights license="https://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
     <terms>
@@ -130,8 +130,8 @@
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-year-suffix="true" collapse="year-suffix">
     <layout delimiter="; " prefix="(" suffix=")">
       <group delimiter=": ">
-       <text macro="creator-year-short"/>
-       <text variable="locator"/>
+        <text macro="creator-year-short"/>
+        <text variable="locator"/>
       </group>
     </layout>
   </citation>
@@ -163,46 +163,46 @@
               <text macro="doi" strip-periods="false"/>
             </group>
           </else-if>
-         <else-if type="chapter" match="any">
-          <group delimiter=". ">
-           <text macro="editor-container-title"/>
-           <text macro="edition"/>
-            <group delimiter=": ">
-             <text variable="publisher-place"/>
-              <group delimiter=", ">
-               <text variable="publisher"/>
-                <group>
-                 <text term="page" form="short"/>
-                 <text variable="page" prefix=" "/>
+          <else-if type="chapter" match="any">
+            <group delimiter=". ">
+              <text macro="editor-container-title"/>
+              <text macro="edition"/>
+              <group delimiter=": ">
+                <text variable="publisher-place"/>
+                <group delimiter=", ">
+                  <text variable="publisher"/>
+                  <group>
+                    <text term="page" form="short"/>
+                    <text variable="page" prefix=" "/>
+                  </group>
                 </group>
               </group>
+              <text macro="collection-title-number" prefix=" "/>
+              <text macro="doi"/>
             </group>
-             <text macro="collection-title-number" prefix=" "/>
-             <text macro="doi"/>
-           </group>
           </else-if>
-         <else-if type="entry-dictionary" match="any">
-          <group>
-            <text variable="publisher-place" suffix=": "/>
-            <text variable="publisher" suffix=", "/>
-            <text term="page" form="short" suffix=" "/>
-            <text variable="page"/>
-          </group>
+          <else-if type="entry-dictionary" match="any">
+            <group>
+              <text variable="publisher-place" suffix=": "/>
+              <text variable="publisher" suffix=", "/>
+              <text term="page" form="short" suffix=" "/>
+              <text variable="page"/>
+            </group>
           </else-if>
-         <else-if type="paper-conference" match="any">
+          <else-if type="paper-conference" match="any">
             <group delimiter=". ">
-             <text variable="title"/>
+              <text variable="title"/>
               <group delimiter=": ">
-               <text term="in" text-case="capitalize-first"/>
-                 <group delimiter=", ">
+                <text term="in" text-case="capitalize-first"/>
+                <group delimiter=", ">
                   <text variable="container-title"/>
                   <text macro="page-range"/>
-                 </group>
-               <text macro="doi"/>
+                </group>
+                <text macro="doi"/>
               </group>
             </group>
-         </else-if>
-        <else-if type="dataset" match="any"/>
+          </else-if>
+          <else-if type="dataset" match="any"/>
           <else>
             <group delimiter=". ">
               <choose>
